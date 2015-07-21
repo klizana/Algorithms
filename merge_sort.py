@@ -1,5 +1,6 @@
 # klizana
 # Merge Sort 2015
+# Running time: O(nlog(n))
 
 def merge_sort(a):	
 	n = len(a)
@@ -31,13 +32,13 @@ def merge(b,c):
     
     return d;
             
-
-# main
-print "Enter the numbers in the array separated by comma:"
-a = []
-arrayIn = raw_input()
-a = arrayIn.split(',')
-print "Array to sort: "	
-print a
-print "Sorted Array: "
-print merge_sort(a)
+if __name__ == '__main__':
+    # main
+    print "Enter the numbers in the array separated by comma:"
+    a = []
+    arrayIn = raw_input()
+    a = arrayIn.split(',')
+    print "Array to sort: "	
+    print a
+    print "Sorted Array: "
+    print merge_sort(a)
